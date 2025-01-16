@@ -24,18 +24,6 @@
     }
 
 
-    class member extends person{
-        private $books = [];
-        public function borrow_book($book){
-            $this->books = $book; 
-        }
-    
-        public function getdetails(){
-            return $this->books; 
-         }
-    }
-
-
     class book{
         private $title;
         private $genre;
@@ -64,7 +52,6 @@
     $author2 = new author('hamza', 'hamza@gmail.com');
 
     $member = new member('mohamed', 'mohamed@gmail.com');
-
 
 
 
